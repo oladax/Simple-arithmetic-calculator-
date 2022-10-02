@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: red;
+   
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    box-shadow: 8px 8px 13px red,
+    3px 8px 13px red;
+}
+.calc{
+    box-shadow: 10px 10px 30px red,
+    10px 10px 30px red (13, 13, 192, 0.886);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 66px);
+    background-color: #ecf0f3;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    row-gap: 11px;
+    padding-top: 25px;
+}
+input{
+    grid-column: span 4;
+    box-shadow: inset -8px -8px 30px #bab4b4, inset 8px 8px 30px #f4f4f4;
+    border: none;
+    background-color: #d9d9d9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 13px;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: end;
+    color: black;
+    border-radius: 11px;
+    padding-right: 19px;
+    cursor: pointer;
+}
+
+button{
+    background-color: #ffffff;
+    box-shadow: inset 10px 10px 15px #cec5c5, 
+    inset -10px -10px 15px white; 
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    object-fit: cover;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold; 
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+/*/the result (result) tag /*/
+.equal{
+    background-color: #ffffff;
+    box-shadow: inset 10px 10px 15px #cec5c5, 
+    inset -10px -10px 15px white; 
+    border: none;
+    width: 133px;
+    height: 60px;
+    border-radius: 100px;
+    object-fit: cover;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold; 
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+button:hover,
+button:hover:nth-child(5),
+button:hover:nth-child(9),
+button:hover:nth-child(13),
+button:hover:nth-child(17),
+button:hover:nth-child(18)
+{
+    box-shadow: inset -8px -8px 30px #bab4b4, inset 8px 8px 30px #f4f4f4;
+    border: none;
+    background-color: #d9d9d9;
+}
+
+button:nth-child(5),
+button:nth-child(9),
+button:nth-child(13),
+button:nth-child(17),
+button:nth-child(20){
+    background-color: white;
+    box-shadow: inset 10px 10px 15px #cec5c5, 
+    inset -10px -10px 15px white; 
+
+}
+
+button:active:nth-child(5),
+button:active:nth-child(9),
+button:active:nth-child(13),
+button:active:nth-child(17),
+button:active:nth-child(18),
+button:active
+{
+    box-shadow: inset 10px 10px 30px rgb(169, 153, 153),
+    inset -10px -10px 30px rgb(58, 56, 56);
+    font-size: 20px;
+    color: white;
+}
+.equal:hover{
+    box-shadow: inset -8px -8px 30px #bab4b4, inset 8px 8px 30px #f4f4f4;
+    border: none;
+    background-color: #d9d9d9;  
+}
+
